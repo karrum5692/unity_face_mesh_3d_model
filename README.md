@@ -8,17 +8,37 @@
 ## Contetns
 
 1. [개요](#개요)
-2. [설계의 주안점](#설계의-주안점)
-3. [사용기술 및 개발환경](#사용기술-및-개발환경)
-4. [프로젝트 기능 구현](#프로젝트-기능-구현)
-5. [주요기능](#주요-기능)
-6. [Reference](#Reference)
+2. [사용기술 및 개발환경](#사용기술-및-개발환경)
+3. [프로젝트 기능 구현](#프로젝트-기능-구현)
+4. [주요기능](#주요-기능)
+5. [Reference](#Reference)
 ------------
+
+## 개요
+
 
 ## 사용기술 및 개발환경
 ![화면 캡처 2022-11-10 144211](https://user-images.githubusercontent.com/82930760/201009877-655136fc-76dd-4fa2-93f2-1dd660f03bc4.jpg)
 
----------------
+Category | Detail
+|---|---|
+FrontEnd | Unity
+BackEnd | Photon
+OS | Windows11
+Library & API | OpenCV,Mediapipe
+IDE | Visual Studio Code, Visual Studio 2019
+Server | Photon
+Document | Google Drive, notion(https://www.notion.so/hammang/VeRf-a13809bbcddd4cb384f1d019546bb245)
+CI | Github
+
+## 프로젝트 기능 구현
+
+
+
+
+
+
+
 ## Reference
 https://github.com/mmmmmm44/VTuber-Python-Unity
 
