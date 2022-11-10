@@ -1,4 +1,21 @@
-# unity_face_mesh_3d_model
+# MTVS 아카데미 1기 - 파이널 프로젝트 VeRf 
 
-[References]
+#### 팀원 : 김우석, 김승수, 김선영, 문지현, 심현수, 이의진
+
+## 수행기간
+2022년 10월 15일 ~ 
+
+## Contetns
+
+1. [개요](#개요)
+2. [설계의 주안점](#설계의-주안점)
+3. [사용기술 및 개발환경](#사용기술-및-개발환경)
+4. [프로젝트 기능 구현](#프로젝트-기능-구현)
+5. [주요기능](#주요-기능)
+6. [Reference](#Reference)
+------------
+
+
+##Reference
 https://github.com/mmmmmm44/VTuber-Python-Unity
+
