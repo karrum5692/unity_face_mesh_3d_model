@@ -121,7 +121,7 @@ public class FaceMesh: MonoBehaviour
         float yaw_clamp = Mathf.Clamp(yaw, -max_rotation_angle, max_rotation_angle);
         float roll_clamp = Mathf.Clamp(roll, -max_rotation_angle, max_rotation_angle);
 
-        neck.rotation = Quaternion.Euler(-pitch_clamp+30 ,  rot.y + yaw_clamp, -roll_clamp) * neck_quat;
+        neck.rotation = Quaternion.Euler(-pitch_clamp+30 ,  rot.y - yaw_clamp, -roll_clamp) * neck_quat;
 
     }
     void EyeBlinking()
