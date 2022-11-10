@@ -15,7 +15,10 @@
 6. [Reference](#Reference)
 ------------
 
+## 사용기술 및 개발환경
+![화면 캡처 2022-11-10 144211](https://user-images.githubusercontent.com/82930760/201009877-655136fc-76dd-4fa2-93f2-1dd660f03bc4.jpg)
 
+---------------
 ## Reference
 https://github.com/mmmmmm44/VTuber-Python-Unity
 
