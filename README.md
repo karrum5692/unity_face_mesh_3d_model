@@ -32,9 +32,10 @@ CI | Github
 
 ## 프로젝트 기능 구현
 <br>
-![testing](https://user-images.githubusercontent.com/82930760/201013693-56389294-508a-4c64-aca5-62cb52da7cdf.gif)
-<br><br><br><br>
-![emotion](https://user-images.githubusercontent.com/82930760/201013306-2b75b087-dde3-4daf-94d8-efc535db60b8.gif)
+![ezgif-2-5991812738](https://user-images.githubusercontent.com/82930760/201014395-2211167f-d8aa-47a8-9836-dbacdb596371.gif)
+
+<br><br><br>
+![ezgif-2-b5df890537](https://user-images.githubusercontent.com/82930760/201014408-5a3ce64b-d8ba-47ac-8f23-6e1d04152c19.gif)
 
 
 
