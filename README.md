@@ -10,8 +10,7 @@
 1. [개요](#개요)
 2. [사용기술 및 개발환경](#사용기술-및-개발환경)
 3. [프로젝트 기능 구현](#프로젝트-기능-구현)
-4. [주요기능](#주요-기능)
-5. [Reference](#Reference)
+4. [Reference](#Reference)
 ------------
 
 ## 개요
@@ -32,10 +31,10 @@ Document | Google Drive, notion(https://www.notion.so/hammang/VeRf-a13809bbcddd4
 CI | Github
 
 ## 프로젝트 기능 구현
-
-
-
-
+<br>
+![testing](https://user-images.githubusercontent.com/82930760/201013693-56389294-508a-4c64-aca5-62cb52da7cdf.gif)
+<br><br><br><br>
+![emotion](https://user-images.githubusercontent.com/82930760/201013306-2b75b087-dde3-4daf-94d8-efc535db60b8.gif)
 
 
 
