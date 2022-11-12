@@ -1,7 +1,3 @@
-"""
-For finding the face and face landmarks for further manipulication
-"""
-
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -18,9 +14,8 @@ class FaceMeshDetector:
         self.min_detection_confidence = min_detection_confidence
         self.min_tracking_confidence = min_tracking_confidence
 
-        # Facemesh
         self.mp_face_mesh = mp.solutions.face_mesh
-        # The object to do the stuffs
+
         self.face_mesh = self.mp_face_mesh.FaceMesh(
             self.static_image_mode,
             self.max_num_faces,
@@ -33,15 +28,12 @@ class FaceMeshDetector:
         self.drawing_spec = self.mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
 
     def findFaceMesh(self, img, draw=True):
-        # convert the img from BRG to RGB
+
         img = cv2.cvtColor(cv2.flip(img, 1), cv2.COLOR_BGR2RGB)
 
-        # To improve performance, optionally mark the image as not writeable to
-        # pass by reference.
         img.flags.writeable = False
         self.results = self.face_mesh.process(img)
 
-        # Draw the face mesh annotations on the image.
         img.flags.writeable = True
         img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
@@ -64,7 +56,6 @@ class FaceMeshDetector:
                     x, y = int(lmk.x * self.imgW), int(lmk.y * self.imgH)
                     face.append([x, y])
 
-                    # show the id of each point on the image
                     cv2.putText(img, str(id), (x-4, y-4), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 255, 255), 1, cv2.LINE_AA)
 
                 self.faces.append(face)
@@ -72,7 +63,6 @@ class FaceMeshDetector:
         return img, self.faces
 
 
-# sample run of the module
 def main():
 
     detector = FaceMeshDetector()
@@ -88,12 +78,8 @@ def main():
 
         img, faces = detector.findFaceMesh(img)
 
-        # if faces:
-        #     print(faces[0])
-
         cv2.imshow('MediaPipe FaceMesh', img)
 
-        # press "q" to leave
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
