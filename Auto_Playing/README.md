@@ -11,6 +11,7 @@
 2. CS File 열어서 코드 수정
 
     string pythonPath = @"bat파일 경로";
+    
     //string pythonPath = @"C:\Users\HP\Desktop\launcher.bat";
       
 ## Batch 파일 설정
