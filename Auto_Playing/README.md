@@ -12,7 +12,7 @@
 
     string pythonPath = @"bat파일 경로";
     
-    //string pythonPath = @"C:\Users\HP\Desktop\launcher.bat";
+    ex) string pythonPath = @"C:\Users\HP\Desktop\launcher.bat";
       
 ## Batch 파일 설정
     set root=C:\Users\HP\miniconda3 
