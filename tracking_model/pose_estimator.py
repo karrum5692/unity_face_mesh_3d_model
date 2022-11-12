@@ -1,7 +1,5 @@
 """
-Modify from https://github.com/yinguobing/head-pose-estimation/blob/master/pose_estimator.py
-
-Estimate head pose according to the facial landmarks
+https://github.com/yinguobing/head-pose-estimation/blob/master/pose_estimator.py
 """
 import cv2
 import numpy as np
@@ -13,7 +11,6 @@ class PoseEstimator:
 
         self.model_points_full = self.get_full_model_points()
 
-        # Camera internals
         self.focal_length = self.size[1]
         self.camera_center = (self.size[1] / 2, self.size[0] / 2)
         self.camera_matrix = np.array(
@@ -21,10 +18,9 @@ class PoseEstimator:
              [0, self.focal_length, self.camera_center[1]],
              [0, 0, 1]], dtype="double")
 
-        # Assuming no lens distortion
+
         self.dist_coeefs = np.zeros((4, 1))
 
-        # Rotation vector and translation vector
         self.r_vec = None
         self.t_vec = None
 
@@ -65,7 +61,6 @@ class PoseEstimator:
         return (rotation_vector, translation_vector)
 
     def draw_annotation_box(self, image, rotation_vector, translation_vector, color=(255, 255, 255), line_width=2):
-        """Draw a 3D box as annotation of pose"""
         point_3d = []
         rear_size = 75
         rear_depth = 0
@@ -84,7 +79,6 @@ class PoseEstimator:
         point_3d.append((-front_size, -front_size, front_depth))
         point_3d = np.array(point_3d, dtype=np.float).reshape(-1, 3)
 
-        # Map to 2d image points
         (point_2d, _) = cv2.projectPoints(point_3d,
                                           rotation_vector,
                                           translation_vector,
@@ -92,7 +86,6 @@ class PoseEstimator:
                                           self.dist_coeefs)
         point_2d = np.int32(point_2d.reshape(-1, 2))
 
-        # Draw all the lines
         cv2.polylines(image, [point_2d], True, color, line_width, cv2.LINE_AA)
         cv2.line(image, tuple(point_2d[1]), tuple(
             point_2d[6]), color, line_width, cv2.LINE_AA)
